@@ -4,7 +4,8 @@ body {
   color: #777;
   font-weight: 300;
   font-size: 1rem;
-  background: #000; }
+  background: #000;
+overflow-x: hidden; }
 
 ::-moz-selection {
   background: #000;
@@ -26,6 +27,13 @@ a {
 
 .bg-black {
   background: #000 !important; }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 .site-wrap:before {
   -webkit-transition: .3s all ease-in-out;
