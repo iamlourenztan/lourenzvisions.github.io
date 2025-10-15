@@ -1,4 +1,44 @@
+/* ===== No scrolling only on home page ===== */
+body.home-page {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden; /* disable scroll only here */
+}
+
+body.home-page .site-wrap {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body.home-page header,
+body.home-page .footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+body.home-page header {
+  top: 0;
+}
+
+body.home-page .footer {
+  bottom: 0;
+}
+
+body.home-page .center {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+
 /* Base */
+
 body {
   line-height: 1.7;
   color: #777;
